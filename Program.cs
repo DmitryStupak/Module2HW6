@@ -14,6 +14,7 @@ namespace Module2HW6
             Console.WriteLine("Сортировка машин по расходу топлива");
             taxiDepot.GetCars().Sort();
             taxiDepot.GetCars().PrintList();
+            ((IFord)taxiDepot.GetCars()[0]).WhatIAm();
         }
     }
 }
